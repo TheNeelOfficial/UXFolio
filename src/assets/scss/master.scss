@@ -1,0 +1,70 @@
+/////////////////////////////////////////////////////
+// project : UXFolio;
+// year : 2020;
+// author : Neel Baggam;
+/////////////////////////////////////////////////////
+
+//configuration styles
+@import "~bootstrap/scss/bootstrap";
+@import '~normalize.css/normalize.css';
+@import "colors";
+@import "fonts";
+@import "breakpoints";
+
+
+// component styles
+@import "../../components/home/home";
+@import "../../components/menu/menu";
+@import "../../components/notFound/notFound";
+
+body{
+  margin: 0;
+  width: 100%;
+  background: $bg;
+  font-family: $roboto;
+  a{
+    color: $white;
+    outline: 0 !important;
+    text-decoration: none;
+    &:hover{
+      cursor: pointer;
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  a{
+    outline: 0 !important;
+    text-decoration: none;
+    &:hover{
+      cursor: pointer;
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  textarea:focus, input:focus, button:focus{
+    outline: 0 !important;
+  }  
+  .button{
+    color: $white;
+    padding: 0.5em 0.2em;
+    width: 8%;
+    font-size: 1.2em;
+    border-style: none;
+    border-radius: 2em;
+    background: $blue;
+    background: linear-gradient(145deg, #446492, #3a547a);
+    box-shadow:  20px 20px 60px #a2c9d5, 
+                 -20px -20px 60px #dcffff; 
+    &:hover{
+      cursor: pointer;
+      background: linear-gradient(45deg, #3a547a, #446492);   
+    }
+  }
+  .forget_txt{
+    display: block;
+    width: 100%;
+    text-align: right;
+    margin: 0.5em 0;
+    font-size: 1.5em;
+  }
+}
