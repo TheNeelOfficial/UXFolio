@@ -3,6 +3,7 @@ import React from "react";
 import { Menu } from "../menu/menu";
 import { About } from "../about/about";
 import { Card } from "../card/card";
+import { SocialBtn } from "../social_btn/social_btn";
 
 
 export class Home extends React.Component{
@@ -12,6 +13,7 @@ export class Home extends React.Component{
                 <Menu/>
                 <About/>
                 <Card/>
+                <SocialBtn/>
             </div>
         );
     }

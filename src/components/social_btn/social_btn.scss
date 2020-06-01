@@ -1,0 +1,32 @@
+.social_btn{
+    max-width: 15%;
+    background: $white;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    padding: 1.8em;
+    position: fixed;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    /* Legacy vendor prefixes that you probably don't need... */
+    /* Safari */
+    -webkit-transform: rotate(-90deg);       
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    .soc_contents{
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        img{
+            margin: 0 1em;
+            height: 20px;
+        }
+    }
+}
