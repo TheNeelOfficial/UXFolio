@@ -1,0 +1,192 @@
+.work_page{
+    margin-top: 100vh;
+    .box{
+        margin: 5em auto;
+        border: 10px solid $bg;
+        border-radius: 50px;
+        box-shadow:  9px 9px 49px #2b4fc1, 
+        -9px -9px 49px #3d6fff;   
+        border-radius: 8px;
+        position:relative;
+        width: 90%;
+        height:20em;
+        
+        line-height:10em;
+        
+        overflow:hidden;
+        .card_img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+      }
+      
+      %box__dir{
+        position:absolute;
+        width:inherit;
+        height:inherit;
+        
+        text-align:center;
+        line-height:inherit;
+        
+        transition:transform .4s ease;
+        
+        &:before{
+          position:absolute;
+            
+          content:'';
+           /*
+            * Calculation:
+            *      ____a____
+            *    /|\        |
+            *   b | \       |
+            *  /  a  \      |
+            *  \  |  /      |
+            *   \ | /       |
+            *    \|/________|
+            *
+            *  a^2 = b^2+b^2
+            *
+            *  solve to b:
+            *
+            *  a^2         = 2b^2 | /2  
+            *  a^2 / 2     =  b^2 | sqrt
+            *  a / sqrt(2) =  b
+            *
+            * Percentage: 
+            * a = 100%
+            * 100 / sqrt(2) = 70.71%
+            *                 ------
+            */
+          width:120%;
+          height:120%;
+          transform: rotate(45deg);
+        }  
+        
+        &:hover{
+          transform:translateX(0);
+          z-index:1;
+        }
+          
+        &:hover:before{
+          width:100%;
+          height:100%;
+          transform: none;  
+        }  
+      }
+      
+      .box__right{
+         @extend %box__dir;
+         background:$white;
+         width: 300%;
+         height: 300%;
+         left: -50%;   
+         top: -50%;
+         transform:translate(10%,66.5%);
+         border-top-left-radius: 40em;
+         &:before{
+            right:50%;bottom:50%;
+            transform-origin: 100% 100%;
+         }
+         
+         &:hover ~ .box__center{
+        //    transform:translate(-120%,0%);   
+         }
+         .right_hover_txt{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-103%,-110%);
+             .main_txt{
+                font-size: 1.5em;
+                text-align: center;
+                padding: 1em;
+             }
+             .sub_txt{
+                color: $bg;
+                text-align: center;
+                font-size: 1.2em;
+                margin-top: -8em;
+             }
+          }
+      } 
+      
+      .box__left{
+         @extend %box__dir;
+         background:$white;
+         transform:translate(-100%,-50%);
+         width: 150%;
+         height: 150%;
+         border-bottom-right-radius: 20em;
+         &:before{   
+            left:90%;
+            transform-origin: 0 0;  
+         }   
+          
+         &:hover ~ .box__center{
+        //    transform:translateX(100%);   
+         }
+         .left_hover_txt{
+            position: absolute;
+            left: 0.7em;
+            top: 50%;
+            transform: translateY(-80%);
+            .main_txt{
+                font-size: 1.5em;
+                text-align: center;
+                padding: 1em;
+            }
+            .sub_txt{
+                color: $bg;
+                text-align: center;
+                font-size: 1.2em;
+                margin-top: -8em;
+            }
+        }
+      }
+      
+    //   .box__top{
+    //      @extend %box__dir;
+    //      background:red;
+    //      transform:translate(-100%,50%);
+    //      width: 300%;
+    //      height: 100%;
+    //      border-top-right-radius: 10em;
+        
+    //      &:before{   
+    //         top: 300%;right:300%;
+    //         transform-origin:-300% 300%; 
+    //      }
+          
+    //      &:hover ~ .box__center{
+    //     //    transform:translateY(100%);   
+    //      }
+    //   }
+      
+      
+    //   .box__bottom{
+    //      @extend %box__dir;
+    //      background:yellow;
+    //      transform:translate(30%,66.5%);
+    //      width: 150%;
+    //      height: 200%;
+    //      border-radius: 10em;
+    //      &:before{   
+    //         bottom:100%;
+    //         left:45%;
+    //         transform-origin:30% 100%;
+    //      }
+          
+    //      &:hover ~ .box__center{
+    //     //    transform:translateY(-100%);   
+    //      }
+    //   }
+      
+      .box__center{
+         @extend %box__dir;
+         background:orange;
+         width: 100%;
+         z-index:-1;
+      }
+      
+}

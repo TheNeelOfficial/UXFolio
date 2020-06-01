@@ -2,7 +2,7 @@
     color: $blue;
     display: inline-block;
     position: fixed;
-    top: 0.5em;
+    top: 0em;
     padding: 1em 2em;
     width: 100%;
     color: $blue;
@@ -14,11 +14,13 @@
     .nav_txt{
         float: right;
         font-weight: 100;
-        font-size: 2em;
-        padding: 0 0.5em;
+        font-size: 1.5em;
+        padding: 0 1em;
         text-decoration: none;
+        color: $black;
         &:hover{
-            color: $black;
+            color: $white;
+            cursor: none;
         }
     }
     .signUp{

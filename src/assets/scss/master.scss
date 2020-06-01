@@ -13,9 +13,17 @@
 
 
 // component styles
+@import "../../components/cursor/cursor";
 @import "../../components/home/home";
 @import "../../components/menu/menu";
+@import "../../components/about/about";
+@import "../../components/card/card";
 @import "../../components/notFound/notFound";
+
+
+* {
+  cursor: none;
+}
 
 body{
   margin: 0;
@@ -27,7 +35,7 @@ body{
     outline: 0 !important;
     text-decoration: none;
     &:hover{
-      cursor: pointer;
+      // cursor: pointer;
       text-decoration: none;
       color: $black;
     }
@@ -67,4 +75,9 @@ body{
     margin: 0.5em 0;
     font-size: 1.5em;
   }
+  .nav_txt{
+    &:hover .cursor{
+        display: none;
+    }
+}
 }

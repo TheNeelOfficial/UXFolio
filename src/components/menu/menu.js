@@ -6,7 +6,7 @@ import Logo from "../../assets/img/Logo.png";
 export class Menu extends React.Component{
     render(){
         return(
-            <React.Fragment>
+            <React.Fragment>  
                 <div className="menu">
                     <NavLink to="/" className="logo"><img src={Logo}></img></NavLink>
                     <NavLink to="/about" className="nav_txt">about</NavLink>
