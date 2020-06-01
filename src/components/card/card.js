@@ -1,5 +1,7 @@
 import React from "react";
 
+import Like from "../../assets/img/Like_MicroInteraction.gif"
+import Recipe from "../../assets/img/RecipeApp.gif"
 import Neu from "../../assets/img/NeumorphicButtonMI.gif"
 import Toggle from "../../assets/img/Toggle_MicroInteraction.gif"
 
@@ -9,6 +11,51 @@ export class Card extends React.Component{
         return(
             <div className="container">
                 <div className="work_page row">
+                <div className="work_txt">
+                    <p>Work</p>
+                </div>
+                <div className="col-sm-6">
+                        <div class="box">
+                            <div class="box__right">
+                                <div className="right_hover_txt">
+                                    <p className="main_txt">Neumorphic Button Micro Interaction</p>
+                                    <p className="sub_txt">View Casestudy</p>
+                                </div>
+                            </div>
+                            <div class="box__left">
+                                <div className="left_hover_txt">
+                                    <p className="main_txt">Neumorphic Button Micro Interaction</p>
+                                    <p className="sub_txt">View Casestudy</p>
+                                </div>
+                            </div>
+                            {/* <div class="box__top">Top → Bottom</div>
+                            <div class="box__bottom">Bottom → Top</div> */}
+                            <div class="box__center">
+                            <img src={Like} className="card_img"></img> 
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-6">
+                        <div class="box">
+                            <div class="box__right">
+                                <div className="right_hover_txt">
+                                    <p className="main_txt">Neumorphic Button Micro Interaction</p>
+                                    <p className="sub_txt">View Casestudy</p>
+                                </div>
+                            </div>
+                            <div class="box__left">
+                                <div className="left_hover_txt">
+                                    <p className="main_txt">Neumorphic Button Micro Interaction</p>
+                                    <p className="sub_txt">View Casestudy</p>
+                                </div>
+                            </div>
+                            {/* <div class="box__top">Top → Bottom</div>
+                            <div class="box__bottom">Bottom → Top</div> */}
+                            <div class="box__center">
+                            <img src={Recipe} className="card_img"></img> 
+                            </div>
+                        </div>
+                    </div>
                     <div className="col-sm-6">
                         <div class="box">
                             <div class="box__right">

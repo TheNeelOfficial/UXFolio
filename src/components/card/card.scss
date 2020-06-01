@@ -1,7 +1,30 @@
 .work_page{
     margin-top: 100vh;
+    margin-bottom: 10vh;
+    .work_txt{
+        p{  
+            position: absolute;
+            font-size: 10em;
+            letter-spacing: 0.2em;
+            color: $bg;
+            left: -10%;
+            text-shadow: 1px 1px 23px rgba(59, 46, 131, 0.37);
+            transform: rotate(-90deg);
+            /* Legacy vendor prefixes that you probably don't need... */
+            /* Safari */
+            -webkit-transform: rotate(-90deg);       
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+            /* IE */
+            -ms-transform: rotate(-90deg);
+            /* Opera */
+            -o-transform: rotate(-90deg);
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+    }
     .box{
-        margin: 5em auto;
+        margin: 2.5em auto;
         border: 10px solid $bg;
         border-radius: 50px;
         box-shadow:  9px 9px 49px #2b4fc1, 
@@ -96,17 +119,18 @@
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-103%,-110%);
+            transform: translate(-98%,-98%);
+            padding: 2em 0;
              .main_txt{
                 font-size: 1.5em;
                 text-align: center;
-                padding: 1em;
+                padding: 1em 2em;
              }
              .sub_txt{
-                color: $bg;
                 text-align: center;
                 font-size: 1.2em;
                 margin-top: -8em;
+                color: $bg;
              }
           }
       } 
