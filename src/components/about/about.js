@@ -16,14 +16,16 @@ export class About extends React.Component{
     render(){
         return(
             <div>
-                <div className="about_page">
+                <div id={'about'} className="about_page">
                     <h1>Neel Baggam</h1>
                     <h2>
-                        UI/UX Designer with full stack development skills 
+                        Full-Stack Developer 
                         <br/>
                         Based in Melbourne,Australia  
                     </h2>
                 </div>
+                <div className='icon-scroll'><div/>
+            </div>
             </div>
         );
     }

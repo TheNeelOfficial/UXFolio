@@ -7,7 +7,7 @@ export class Cursor extends React.Component{
         const cursor = document.querySelector('.cursor');
 
         document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+            cursor.setAttribute("style", "top: "+(e.pageY - 1)+"px; left: "+(e.pageX - 1)+"px;")
         })
 
         document.addEventListener('click', () => {
@@ -22,7 +22,7 @@ export class Cursor extends React.Component{
     render(){
         return(
             <div>
-                <div class="cursor"></div>   
+                <div className="cursor"></div>   
             </div>
         );
     }

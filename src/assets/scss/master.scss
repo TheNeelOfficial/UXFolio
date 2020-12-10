@@ -18,6 +18,7 @@
 @import "../../components/social_btn/social_btn";
 @import "../../components/menu/menu";
 @import "../../components/about/about";
+@import "../../components/process/process";
 @import "../../components/card/card";
 @import "../../components/notFound/notFound";
 
@@ -28,9 +29,15 @@
 
 body{
   margin: 0;
+  padding: 0;
   width: 100%;
-  background: $bg;
   font-family: $roboto;
+  // animation: bg 1s 0.5s;
+  background: $bg;
+  // @keyframes bg {
+  //   from {background-color: $white;}
+  //   to {background-color: $bg;}
+  // }
   a{
     color: $white;
     outline: 0 !important;

@@ -1,6 +1,7 @@
 .menu{
+    display: none;
     color: $blue;
-    display: inline-block;
+    // display: inline-block;
     position: fixed;
     top: 0em;
     padding: 1em 2em;
@@ -17,9 +18,9 @@
         font-size: 1.5em;
         padding: 0 1em;
         text-decoration: none;
-        color: $black;
+        color: $white;
         &:hover{
-            color: $white;
+            color: $black;
             cursor: none;
         }
     }
